@@ -1,0 +1,49 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.flex{
+    display: flex;
+}
+
+.justify-item{
+    justify-content: center;
+
+}
+.item-center{
+    align-items: center;
+}
+
+.transparent{
+    background: transparent;
+}
+.border{
+    border: 2px solid red;
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+
+/* .background-none{
+    background: none;
+} */
+/* .transparent-svg {
+    background-color: transparent;
+  } */
+
+
+  @font-face {
+    font-family: 'SpotifyMixUI';
+    src: url('path-to-font/SpotifyMixUI-400.woff2') format('woff2'),
+         url('path-to-font/SpotifyMixUI-400.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: 'SpotifyMixUI', sans-serif;
+  }
+  

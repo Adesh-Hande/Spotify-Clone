@@ -1,0 +1,116 @@
+.right {
+    /* width: 420px; */
+    width: 75vw;
+    background: linear-gradient(to top, #121212, #212121);
+    /* border:2px solid red; */
+    height: 85vh;
+    margin-top: 20px;
+    margin-left: 15px;
+    color: white;
+}
+
+.spotifPlaylist h2 {
+    margin: 10px 0 0 20px;
+    max-height: 70vh;
+}
+
+.cardContainer {
+    max-width: 72vw;
+    margin: auto;
+    height: 70vh;
+    gap: 5px;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    /* overflow: hidden; */
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+.card-back {
+    width: auto;
+
+    border-radius: 5px;
+
+}
+
+.card {
+    width: 150px;
+    height: 200px;
+    border-radius: 5px;
+    margin: 10px;
+    /* border: 2px solid red; */
+
+}
+
+.play {
+    right: 10px;
+    bottom: 15%;
+    opacity: 0;
+    width: 40px;
+    height: 40px;
+    background-color: #00FF00;
+    border-radius: 50%;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.9s ease-out;
+
+}
+
+/* .card :hover {
+    opacity: 1;
+    bottom: 25%;
+    cursor: pointer;
+    
+} */
+.card:hover{
+    cursor: pointer;
+}
+.card-back:hover .play {
+    opacity: 1;
+    bottom: 30%;
+    cursor: pointer;
+   
+}
+.card-back:hover{
+    background-color: #202020;
+    /* border: 2px solid red; */
+}
+
+
+.card img {
+    width: 100%;
+    /* Ensures the image fills the card */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+/*  */
+.card img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.card h5 {
+    margin-left: 10px;
+}
+
+.playBar button {
+    background: transparent;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.playBar{
+    gap: 10px;
+    padding: 5px;
+    
+}
