@@ -9,11 +9,22 @@
     color: white;
 }
 
-.spotifPlaylist h2 {
-    margin: 10px 0 0 20px;
+.spotifyPlaylist  {
+    /* margin: 10px 0 0 20px; */
     max-height: 70vh;
+  
+    
 }
-
+.spotify-header{
+    margin: 10px 10px 0 20px;
+    justify-content: space-between;
+    background: transparent;
+}
+.spotify-header button{
+    /* justify-content: space-between; */
+    background: transparent;
+    color: white;
+}
 .cardContainer {
     max-width: 72vw;
     margin: auto;
