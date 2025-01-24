@@ -149,12 +149,12 @@
 
     <div class="right ">
       <div class="spotifyPlaylist  ">
-        <div class="spotify-header  flex item-center" >
-        <h2>Popular Albums and sigles </h2>
-        <button>
-             <h3>Show all</h3> 
-        </button>
-      </div>
+        <div class="spotify-header  flex item-center">
+          <h2>Popular Albums and sigles </h2>
+          <button>
+            <h3>Show all</h3>
+          </button>
+        </div>
         <div class="cardContainer  flex ">
           <div class="card-back ">
             <div class="card  relative ">
@@ -423,53 +423,53 @@
               <h5>hoey sigh </h5>
             </div>
           </div>
-          
 
 
 
 
-      </div>
 
-      <div class="playBar flex  item-center justify-item">
-        <button class="preSong">
-          <img src="assests/images/PlayBar/presong.svg" alt="">
+        </div>
 
-        </button>
-        <!-- <button class="playSong">
+        <div class="playBar flex  item-center justify-item">
+          <button class="preSong">
+            <img src="assests/images/PlayBar/presong.svg" alt="">
+
+          </button>
+          <!-- <button class="playSong">
           <img src="assests/images/PlayBar/pausesong.svg"alt="">
         </button> -->
-        <button id="button" onclick="togglePlayPause()">
-          <svg id="play-icon" width="40" height="40" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="25" cy="25" r="24" fill="#ccc" stroke="#000" stroke-width="2" />
-            <polygon points="20,15 35,25 20,35" fill="#000" />
-          </svg>
-          <svg id="pause-icon" width="40" height="40" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"
-            style="display: none;">
-            <circle cx="25" cy="25" r="24" fill="#ccc" stroke="#000" stroke-width="2" />
-            <rect x="18" y="15" width="5" height="20" fill="#000" />
-            <rect x="27" y="15" width="5" height="20" fill="#000" />
-          </svg>
+          <button id="button" onclick="togglePlayPause()">
+            <svg id="play-icon" width="40" height="40" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="25" cy="25" r="24" fill="#ccc" stroke="#000" stroke-width="2" />
+              <polygon points="20,15 35,25 20,35" fill="#000" />
+            </svg>
+            <svg id="pause-icon" width="40" height="40" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"
+              style="display: none;">
+              <circle cx="25" cy="25" r="24" fill="#ccc" stroke="#000" stroke-width="2" />
+              <rect x="18" y="15" width="5" height="20" fill="#000" />
+              <rect x="27" y="15" width="5" height="20" fill="#000" />
+            </svg>
 
 
-        </button>
+          </button>
 
-        <button class="nextSong"><img src="assests/images/PlayBar/nextsong.svg" alt=""></button>
+          <button class="nextSong"><img src="assests/images/PlayBar/nextsong.svg" alt=""></button>
+        </div>
       </div>
     </div>
-  </div>
-  <script>
-    function togglePlayPause() {
-      const playIcon = document.getElementById('play-icon');
-      const pauseIcon = document.getElementById('pause-icon');
-      if (playIcon.style.display === 'none') {
-        playIcon.style.display = 'block';
-        pauseIcon.style.display = 'none';
-      } else {
-        playIcon.style.display = 'none';
-        pauseIcon.style.display = 'block';
-      }
-    }
-  </script>
+    <script>
+      function togglePlayPause() {
+        const playIcon = document.getElementById('play-icon');
+        const pauseIcon = document.getElementById('pause-icon');
+        if (playIcon.style.display === 'none') {
+          playIcon.style.display = 'block';
+          pauseIcon.style.display = 'none';
+        } else {
+          playIcon.style.display = 'none';
+          pauseIcon.style.display = 'block';
+        }
+      }
+    </script>
 
 </body>
 
