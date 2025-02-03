@@ -1,10 +1,11 @@
 .left{
     /* width: 420px; */
     width: 25vw;
+    height: 90vh;
     background-color: #121212;
     /* border:2px solid red; */
     height: 85vh;
-    margin-top: 20px;
+    margin-top: 15px;
     margin-left: 15px;
     color: white;
 }
@@ -24,6 +25,69 @@ header button{
     color:rgb(165, 162, 162);
 }
 
+
+.main{
+max-height: 53vh;
+max-width:25vw;
+
+
+}
+.songlist{
+    height: 400px;
+    overflow: auto;
+}
+.main ul li{
+    border: 2px solid rgb(157, 156, 156);
+   list-style: none;
+   list-style: decimal;
+   display: flex ;
+   justify-content: space-between;
+   align-items: center;
+   gap: 5px;
+   max-width: 24vw;
+   padding: 5px 5px;
+   cursor: pointer;
+  height: 40px;
+  border-radius: 6px;
+   
+}
+.main ul{
+    width:25vw;
+    height: 350;
+    gap: 10px;
+    flex-direction: column;
+    padding: 0 20px;
+    overflow: auto;
+    /* border:  2px solid red; */
+
+}
+.info{
+    font-size: 13px;
+    width: 234px;
+    padding-left: 5px;
+    /* border: 2px solid red; */
+}
+
+.songname{
+    
+        /* position: relative; */
+        /* transform: translateX(100%); */
+        /* transition: transform 0.5s ease-in-out; */
+
+}
+
+.playnow{
+    width: 100px;
+    /* color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    gap: 6px;
+    font-weight: 700;
+    /* border: 2px solid red; */
+}
+
 footer div {
     flex-wrap: wrap;
     gap: 10px;
@@ -31,8 +95,9 @@ footer div {
 }
 
   footer{
-    max-width: 23vw;
+    width: 23vw;
     bottom: 0;
+    height: 20vh;
     /* border: 2px solid red; */
   } 
 
@@ -66,6 +131,10 @@ footer div {
     
 
 }
+
+
+
+
 .footer-btn{
     margin-top: 20px;
     height: 50px;

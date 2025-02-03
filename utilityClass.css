@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
 
 
 .flex{
@@ -35,7 +35,7 @@
   } */
 
 
-  @font-face {
+  /* @font-face {
     font-family: 'SpotifyMixUI';
     src: url('path-to-font/SpotifyMixUI-400.woff2') format('woff2'),
          url('path-to-font/SpotifyMixUI-400.woff') format('woff');
@@ -46,4 +46,4 @@
   body {
     font-family: 'SpotifyMixUI', sans-serif;
   }
-  
+   */

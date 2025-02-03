@@ -3,8 +3,8 @@
     width: 75vw;
     background: linear-gradient(to top, #121212, #212121);
     /* border:2px solid red; */
-    height: 85vh;
-    margin-top: 20px;
+    height: 86vh;
+    margin-top: 15px;
     margin-left: 15px;
     color: white;
 }
@@ -54,6 +54,9 @@
     margin: 10px;
     /* border: 2px solid red; */
 
+}
+.card-back{
+    height: 200px;
 }
 
 .play {
@@ -110,7 +113,42 @@
     margin-left: 10px;
 }
 
-.playBar button {
+
+.seekbar{
+    gap: 10px;
+}
+.bar{
+    width: 80%;
+    height: 2px;
+    background-color: white;
+    /* margin: auto; */
+    
+}
+.circle{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: relative;
+    background-color: rgb(222, 202, 202);
+    
+    top: -2px;
+    left: 0%;
+    /* bottom: 6px; */
+    transition: left 0.5s;
+    
+
+}
+
+.song-time{
+    padding-right: 10px;
+    width: 30px;
+    height: 10px;
+    color: white;
+    /* font-size: 10px; */
+    /* width: 70px; */
+    /* border: 2px solid red; */
+}
+.playBar button  {
     background: transparent;
     /* border: 2px solid red; */
     display: flex;
@@ -121,7 +159,30 @@
 }
 
 .playBar{
+ 
+    width: 80%;
+    margin: auto;
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     gap: 10px;
     padding: 5px;
     
+    
+}
+.playBar button img{
+    cursor: pointer;
+    
+    /* border:  2px solid red; */
+    /* filter: invert(); */
+}
+.song-btn{
+    gap: 5px;
+}
+.songtitle{
+    padding-left: 10px;
+    /* border:  2px solid red; */
+    /* width: 20vw; */
+    color: white;
 }
