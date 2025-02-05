@@ -171,14 +171,23 @@
     
     
 }
-.playBar button img{
+.song-btn img{
     cursor: pointer;
     
     /* border:  2px solid red; */
     /* filter: invert(); */
 }
 .song-btn{
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 5px;
+}
+.song-btn-box{
     gap: 5px;
+}
+.song-btn svg{
+    border: 2px solid red;
 }
 .songtitle{
     padding-left: 10px;

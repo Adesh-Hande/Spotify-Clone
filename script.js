@@ -43,6 +43,7 @@ const playMusic = (track, pause = false) => {
 
 };
 let countt = 1;
+
 currentSong.addEventListener("ended", () => {
   // currentIndex = (currentIndex + 1) % songs.length; // Loop back after the last song
   // playMusic(songs[currentIndex]); // Play next song
@@ -64,6 +65,7 @@ currentSong.addEventListener("ended", () => {
 
 });
 
+ 
 
 const nextSong = (track) => {
 
@@ -152,7 +154,7 @@ async function main() {
     }
   })
 
-
+  
   let count = 1;
   next.addEventListener("click", () => {
     // alert("hii")
@@ -175,6 +177,7 @@ async function main() {
 
 
   })
+
 
 
   let countpre = songs.length - 1;
@@ -243,19 +246,63 @@ async function main() {
     console.log(newSongList)
   })
 
+   console.log(document.querySelector("#song-count"))
+  // let songCount =document.querySelector("#song-count")
+  // let changeCount=0;
+  // songCount.addEventListener("click",()=>{
+
+  //  changeCount=changeCount+1;
+  //  console.log(changeCount)
+  //  if(changeCount==1){
+  //   document.querySelector("#song-count").innerHTML="<h1> Hii </h1>";
+  //   changeCount.src="assests/images/PlayBar/playall.svg"
+  //  }
 
 
+  // })
+  let changeCount = 1;
+  let songCount = document.querySelector("#song-count"); // Ensure this is correctly referenced
+  
+  songCount.addEventListener("click", () => {
+    
+  
+      console.log(changeCount);
+  
+      if (changeCount === 1) {
+        songCount.src = "assests/images/PlayBar/playall.svg";
 
-
-  //    document.querySelector(".circle").style.left=(1/3)*100+"%"
-  //   //  ((currentSong.currentTime/currentSong.duration) *100 + "%");
-  // console.log((currentSong.currentTime / currentSong.duration))
-  //   console.log(document.querySelector(".circle"))
-  //   // console.log(document.querySelector(".seekbar"))
-
+        // nextSong(songs[countt])
+        // for(changeCount;countt>=songs.length;countt){
+        //   if(countt==songs.length){
+        //     countt++
+        //     console.log("count if "+countt)
+        //   }
+        //   else{
+        // nextSong(songs[countt])
+        // console.log("countt before"+countt)
+        // countt++
+        // console.log("countt after"+countt)
+        //   }
+        
+      }
+      else if(changeCount==2){
+        songCount.src = "assests/images/PlayBar/playcross.svg";
+        
+      }
+      else if(changeCount==3){
+        songCount.src = "assests/images/PlayBar/repeat1.svg";
+        playMusic(songs[countt], true)
+        // currentSong.play()
+        console.log("countt"+countt)
+        changeCount=0
+      }
+      else {
+        
+      }
+      changeCount += 1; 
+  });
+  
 }
-
-
 
 main()
 
